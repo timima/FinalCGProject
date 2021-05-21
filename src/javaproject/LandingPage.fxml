@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="LPbackground" prefHeight="558.0" prefWidth="781.0" styleClass="LPbackground" stylesheets="@LPcss.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.LandingPageController">
+   <children>
+      <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="231.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/appLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="291.0" layoutY="115.0" prefHeight="103.0" prefWidth="327.0" text=" Fast Typing" textFill="WHITE">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="subpane" layoutX="79.0" layoutY="26.0" prefHeight="509.0" prefWidth="626.0" styleClass="subpane">
+         <children>
+            <JFXButton fx:id="quickTestButton" layoutX="227.0" layoutY="303.0" onAction="#goToTest" prefHeight="53.0" prefWidth="172.0" text="Start Test" textFill="WHITE" />
+            <Label layoutX="200.0" layoutY="221.0" prefHeight="82.0" prefWidth="227.0" text="Online typing test to find out your typing speed" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
